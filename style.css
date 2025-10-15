@@ -1,0 +1,152 @@
+body {
+  box-sizing: border-box;
+}
+#about img {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px; /* Bo góc */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Căn giữa */
+}
+.weather{
+    background-color: #6b7280;
+}
+.weather-bg-sunny {
+  background: linear-gradient(135deg, #60a5fa, #38bdf8);
+}
+.weather-bg-cloudy {
+  background: linear-gradient(135deg, #94a3b8, #64748b);
+}
+.weather-bg-rainy {
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+}
+.weather-bg-night {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.weather-icon {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.weather-icon {
+  transition: all 0.3s ease;
+}
+
+.weather-icon:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.pokemon-card {
+  transition: all 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.skill-badge {
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.1);
+}
+
+.weather-bg-sunny {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+.weather-bg-cloudy {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+.weather-bg-rainy {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+.weather-bg-snowy {
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+}
+.weather-bg-stormy {
+  background: linear-gradient(135deg, #374151, #111827);
+}
+.weather-bg-foggy {
+  background: linear-gradient(135deg, #9ca3af, #6b7280);
+}

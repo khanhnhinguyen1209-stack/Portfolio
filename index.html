@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio_KN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-gray-800">
+          <span class="text-blue-600">Khánh Nhi</span> 
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Trang chủ</a>
+          <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Giới thiệu</a>
+          <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Kỹ năng</a>
+          <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Dự án</a>
+          <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Liên hệ</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white min-h-screen flex items-center">
+    <div class="container mx-auto px-6 text-center">
+      <div class="fade-in-up">
+          
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          Xin chào! I'm <span class="text-yellow-400">Nguyễn Thị Khánh Nhi</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-white/90">
+          Công nghệ vật lý điện tử và tin học
+        </p>
+        <p class="text-lg mb-12 text-white/80 max-w-2xl mx-auto">
+          Trường Đại học Khoa học Tự nhiên - ĐHQG TPHCM
+        </p>
+        <div class="space-x-4">
+          <a href="#projects"
+            class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+            Xem dự án
+          </a>
+          <a href="#contact"
+            class="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-4 px-8 rounded-full transition-all duration-300">
+            Liên hệ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Giới thiệu về tôi</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <img src="img/about.jpg" alt="about">
+                <div class="fade-in-up">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6"></h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Trong 4 năm học đại học, tôi đã tham gia nhiều hoạt động nghiên cứu và tình nguyện, 
+                        góp phần tích lũy kiến thức và kỹ năng thực tiễn. Tôi luôn tin rằng công nghệ là chìa 
+                        khóa thay đổi thế giới, và mong muốn đóng góp vào việc tạo ra những sản phẩm mang ý nghĩa, 
+                        mang lại giá trị cho cộng đồng.
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Với tinh thần học hỏi và sáng tạo, tôi không ngừng trau dồi bản thân qua các dự án học thuật 
+                        và hoạt động xã hội — từ phân tích dữ liệu, lập trình đến nghiên cứu trong lĩnh vực bán dẫn và công nghệ 
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600">3+</div>
+                            <div class="text-gray-600">Ngày tình nguyện</div>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <div class="text-3xl font-bold text-green-600">20+</div>
+                            <div class="text-gray-600">Dự án hoàn thành</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Kỹ năng chuyên môn</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center fade-in-up">
+                    <div class="text-6xl mb-4">🎨</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Frontend</h3>
+                    <div class="space-y-2">
+                        <span class="skill-badge inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium m-1">HTML/CSS</span>
+                        <span class="skill-badge inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium m-1">JavaScript</span>
+                        <span class="skill-badge inline-block bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium m-1">React</span>
+                        <span class="skill-badge inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium m-1">Vue.js</span>
+                        <span class="skill-badge inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium m-1">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center fade-in-up">
+                    <div class="text-6xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Backend</h3>
+                    <div class="space-y-2">
+                        <span class="skill-badge inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium m-1">Node.js</span>
+                        <span class="skill-badge inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium m-1">Python</span>
+                        <span class="skill-badge inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium m-1">PHP</span>
+                        <span class="skill-badge inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium m-1">MySQL</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center fade-in-up">
+                    <div class="text-6xl mb-4">🛠️</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Tools</h3>
+                    <div class="space-y-2">
+                        <span class="skill-badge inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium m-1">Git</span>
+                        <span class="skill-badge inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium m-1">Docker</span>
+                        <span class="skill-badge inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium m-1">Canvas</span>
+                        <span class="skill-badge inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium m-1">PowerPoint</span>
+                        <span class="skill-badge inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium m-1">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Projects Section -->
+<section id="projects" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+  <div class="container mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">✨ Dự án nổi bật ✨</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-400 mx-auto rounded-full"></div>
+      <p class="text-gray-600 mt-4">Khám phá những dự án thú vị tôi đã tạo ra</p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- 🟡 Pokemon Explorer -->
+      <div class="project-card bg-gradient-to-br from-yellow-100 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+        <div class="flex items-center mb-6">
+          <div class="text-4xl mr-3">🔍</div>
+          <h3 class="text-2xl font-bold text-gray-800">Pokemon Explorer</h3>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Ứng dụng khám phá thế giới Pokemon với thông tin chi tiết về từng Pokemon,
+          sử dụng <b>PokeAPI</b> để lấy dữ liệu real-time.
+        </p>
+        <div class="bg-white rounded-xl p-6 mb-6 text-center shadow-inner">
+          <button id="random-pokemon-btn" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-full transition">🎲 Pokemon ngẫu nhiên</button>
+        </div>
+        <div class="text-center mt-4">
+          <div id="pokemon-loading" class="hidden mt-4 text-gray-500">Đang tải...</div>
+          <div id="pokemon-display" class="hidden mt-4">
+            <img id="pokemon-image" class="mx-auto w-24 h-24" alt="">
+            <p id="pokemon-name" class="font-bold text-lg mt-2"></p>
+            <p>Chiều cao: <span id="pokemon-height"></span></p>
+            <p>Cân nặng: <span id="pokemon-weight"></span></p>
+            <div id="pokemon-types" class="mt-2"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm">PokeAPI</span>
+          <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">REST API</span>
+        </div>
+      </div>
+
+
+  <!-- Weather Display -->
+    <!-- Weather Dashboard -->
+<div class="project-card bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl p-8 shadow-lg">
+  <div class="flex items-center mb-6">
+    <div class="text-4xl mr-4">🌤️</div>
+    <h3 class="text-2xl font-bold text-gray-800">Weather Dashboard</h3>
+  </div>
+
+  <p class="text-gray-600 mb-6">
+    Ứng dụng thời tiết thông minh hiển thị thông tin hiện tại và dự báo,
+    sử dụng Open-Meteo API.
+  </p>
+
+  <div class="bg-white rounded-lg p-6 mb-6 text-center">
+    <button id="get-weather-btn"
+      class="bg-blue-600 hover:bg-blue-700 transition-all text-white font-semibold py-2 px-4 rounded-full shadow-md">
+      📍 Lấy thời tiết hiện tại
+    </button>
+  </div>
+
+            <!-- Weather Display -->
+            <div id="weather-section" class="text-center">
+                <div id="weather-loading" class="hidden mt-4 text-gray-500">Đang tải dữ liệu thời tiết...</div>
+
+                <div id="weather-card" class="hidden rounded-xl p-6 text-white text-center shadow-inner transition-all duration-500">
+                <div id="weather-icon" class="text-6xl mb-4">☀️</div>
+                <h4 class="text-2xl font-bold mb-2" id="weather-location">--</h4>
+                <div class="text-4xl font-bold mb-2">
+                    <span id="weather-temp">--</span>°C
+                </div>
+                <div class="text-lg mb-4" id="weather-description">--</div>
+
+                <div class="grid grid-cols-2 gap-4 text-sm bg-white/10 rounded-lg p-4">
+                    <div>
+                    <span class="font-semibold">💨 Tốc độ gió:</span>
+                    <div id="weather-wind">-- km/h</div>
+                    </div>
+                    <div>
+                    <span class="font-semibold">🧭 Hướng gió:</span>
+                    <div id="weather-direction">--°</div>
+                    </div>
+                </div>
+
+                <p class="text-sm mt-4 opacity-90" id="weather-time">Cập nhật: --</p>
+                </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mt-6">
+                <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                <span class="bg-cyan-200 text-cyan-800 px-3 py-1 rounded-full text-sm">Open-Meteo API</span>
+                <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm">Geolocation</span>
+            </div>
+            </div>
+
+
+      <!-- 🟢 Currency Exchange -->
+      <div class="project-card bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+        <div class="flex items-center mb-6">
+          <div class="text-4xl mr-3">💱</div>
+          <h3 class="text-2xl font-bold text-gray-800">Currency Exchange</h3>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Widget tỷ giá ngoại tệ real-time hiển thị tỷ giá USD sang VND,
+          sử dụng <b>Exchange Rate API</b>.
+        </p>
+        <div class="bg-white rounded-xl p-6 mb-6 text-center shadow-inner">
+          <button id="refresh-rate-btn" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-5 rounded-full transition">🔄 Làm mới tỷ giá</button>
+        </div>
+
+        <div class="text-center mt-4">
+          <div id="currency-loading" class="hidden mt-4 text-gray-500">Đang tải...</div>
+          <div id="currency-error" class="hidden mt-4 text-red-500 font-semibold">⚠️ Không thể tải dữ liệu!</div>
+
+          <div id="currency-display" class="mt-4 text-gray-700">
+            <p>1 USD = <span id="exchange-rate" class="font-semibold text-green-700">--</span> VND</p>
+            <p>10 USD = <span id="usd-10">--</span></p>
+            <p>100 USD = <span id="usd-100">--</span></p>
+            <p id="last-updated" class="text-sm text-gray-500 mt-1"></p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-sm">Exchange Rate API</span>
+          <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Real-time Data</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+            
+    <section id="projects" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Dự án tiêu biểu</h2>
+
+    <!-- Dùng grid để xếp ngang -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300">
+        <div class="text-4xl mb-4 text-indigo-500">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Phân tích & Phân loại tín hiệu EEG</h3>
+        <p class="text-gray-600 mb-4">
+          Xử lý, trích xuất đặc trưng và phân loại tín hiệu EEG bằng các mô hình KNN, SVM.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+          <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">MATLAB</span>
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Scikit-learn</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300">
+        <div class="text-4xl mb-4 text-green-600">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Phân tích FDI tại Việt Nam</h3>
+        <p class="text-gray-600 mb-4">
+          Phân tích dữ liệu FDI (2010–2023), trực quan hóa bằng Matplotlib và đưa ra đề xuất chiến lược.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Python</span>
+          <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Pandas</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Matplotlib</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300">
+        <div class="text-4xl mb-4 text-orange-500">
+          <i class="fas fa-trash-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Thùng rác thông minh</h3>
+        <p class="text-gray-600 mb-4">
+          Hệ thống thùng rác tự động dùng vi điều khiển ATmega128, cảm biến siêu âm và lập trình C.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">ATmega128</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">C Programming</span>
+          <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Sensor System</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Liên hệ với tôi</h2>
+                <div class="w-24 h-1 bg-blue-400 mx-auto"></div>
+                <p class="text-gray-300 mt-4">Hãy cùng nhau tạo ra những điều tuyệt vời!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in-up">
+                    <h3 class="text-2xl font-bold mb-6">Thông tin liên hệ</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📧</div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-gray-300">khanhnhinguyen1209@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📱</div>
+                            <div>
+                                <div class="font-semibold">Điện thoại</div>
+                                <div class="text-gray-300">+84 972 435 380</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📍</div>
+                            <div>
+                                <div class="font-semibold">Địa chỉ</div>
+                                <div class="text-gray-300">TPHCM, Việt Nam</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4">Kết nối với tôi</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-all duration-300 transform hover:scale-110">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-full transition-all duration-300 transform hover:scale-110">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-gray-800 hover:bg-gray-900 p-3 rounded-full transition-all duration-300 transform hover:scale-110">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up">
+                    <form class="space-y-6" id="contact-form">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Nhập họ và tên">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Nhập email">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Tin nhắn</label>
+                            <textarea rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Nhập tin nhắn của bạn"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 KhanhNhi. Tất cả quyền được bảo lưu.</p>
+            <p class="text-gray-400 mt-2">Được tạo với ❤️ và ☕</p>
+        </div>
+    </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
